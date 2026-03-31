@@ -4,30 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xpert</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="xpert.css">
 </head>
 <body>
     <header class="header">
-        <img src="xpert-logo.png" alt="Xpert Logo" class="logo">
+        <div class="logo">XPERT</div>
         <nav>
             <ul class = "nav-links">
-                <li>Home</li>
-                <li>FAQ</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#top-rated">Top Rated</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <main class="main-content">
+    <main>
         <section class="hero">
-            <h1>HI I Am Xpert!</h1>
-            <p>Have A Look At My Best Works</p>
-            <button class="cta-button">Explore Now</button>
+            <div class="hero-content">
+                <h1>Explore <span>Anime</span> Like <span>Never Before</span></h1>
+                <p>What Are You Waiting For?</p>
+                <button class="cta-button">EXPLORE</button>
+            </div>
+            <video class="hero-video" autoplay muted loop>
+                <source src="Resources/images/hero-video-bg.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="carousel-section" aria-label="Anime slider">
+            <div class="slider" id="animeSlider">
+                <div class="item gojo active">Gojo</div>
+                <div class="item opm next">OPM</div>
+                <div class="item goku">Goku</div>
+                <div class="item naruto">Naruto</div>
+                <div class="item alya">Alya</div>
+                <div class="item frieren">Frieren</div>
+                <div class="item luffy prev">Luffy</div>
+            </div>
+        </section>
+        <section id="top-rated" class="highest-rated-section">
+        </section>
+        <section class="recommendation-section">
+        </section>
+        <section id="reviews" class="reviews-section">
+        </section>
+        <section id="about" class="about-section">
         </section>
     </main>
-
-    <footer>
+    <footer id="contact" class="footer">
     <div class="footer-content">
         <p>© 2026 Your Name. All rights reserved.</p>
         <p>
